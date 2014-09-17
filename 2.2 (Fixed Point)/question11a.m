@@ -1,16 +1,13 @@
-function [ ] = partb()
-
-p_current = 1;
+function [ ] = question11a()
+p_current = 0.5;
 p_before = 0;
-tol = 10^-3;
+tol = 10^-5;
 num_of_iter = 0;
 
 while abs(p_current - p_before) >= tol
     p_before = p_current;
-    p_current = p_before - (p_before^5 - 7)/(p_before^2);
+    p_current = (2 - exp(p_before) + p_before^2)/3;
     num_of_iter = num_of_iter + 1;
 end
 disp(num_of_iter);
 end
-
-
