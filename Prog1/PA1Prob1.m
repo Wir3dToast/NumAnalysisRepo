@@ -30,10 +30,10 @@ end
 
 A = sort(A);
 
-disp(A(1)); % p(x min)
-disp(A(end)); %p (x max)
-disp(map.get(A(1))); % x max
-disp(map.get(A(end))); % x min
+fprintf('p(x min): %i\n',A(1)); % p(x min)
+fprintf('p(x max): %i\n',A(end)); %p (x max)
+fprintf('x max: %i\n',map.get(A(1))); % x max
+fprintf('x min: %i\n',map.get(A(end))); % x min
 
     
     
