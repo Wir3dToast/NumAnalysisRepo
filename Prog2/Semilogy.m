@@ -9,6 +9,9 @@ for index = 1 : 2
     yout2 = BaryInter(xin_uniform, xout);
 
     figure;
+    %Tranpose yout1, yout2 to row matrices and subtract f(xout). Reconvert
+    %back to column matrices to apply abs function and add 1.0e-18. Then
+    %convert back to row matrix for plotting with xout
     semilogy(xout,(1.0e-18+abs([(yout1' - f(xout))',(yout2'- f(xout))']))','linewidth',1);  
     hold on;
     

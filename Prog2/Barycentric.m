@@ -13,5 +13,5 @@ for index = 1 : 2
     plot(xout, yout_uniform,'b',xout, arrayfun(f,xout),'g',xin_uniform, arrayfun(f,xin_uniform),'*');    
     hold on;
     figure;
-    plot(xout, yout_cheby,'b',xout, arrayfun(f,xout),'g',xin_uniform, arrayfun(f,xin_cheby),'*');
+    plot(xout, yout_cheby,'b',xout, arrayfun(f,xout),'g',xin_cheby, arrayfun(f,xin_cheby),'*');
 end
